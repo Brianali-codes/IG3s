@@ -1,0 +1,47 @@
+.searcher{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 20px; 
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 2px rgb(233, 233, 233);
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 1px 1px 3px 2px rgb(170, 170, 170);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#output{
+    display: none;
+}
+
+
+@media (max-width: 728px){
+    #Card-Container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    .HDN{
+        text-align: center;
+    }
+    .searcher{
+        flex-direction: column;
+    }
+    #display{
+        width: 70%;
+    }
+}
+

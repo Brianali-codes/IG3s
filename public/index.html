@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTS3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div id="NAVBAR" class="flex justify-center items-center h-11 gap-1">
+        <img src="images/download.png" alt="Logo" class="w-8">
+        <p class="font-bold">YTS3</p>
+    </div>
+
+    <hr>
+    <div class="flex flex-row justify-center items-center h-20 gap-5 p-5">
+        <button>Download Mp3</button>
+        <button>My Github</button>
+    </div>
+    <hr>
+    <br><br>
+    <div class="flex flex-col justify-center items-center p-5">
+        <p class="HDN text-3xl font-bold">Convert Youtube videos to Mp3</p>
+        <br>
+        <p class="HDN">Easily convert your youtube videos to mp3 with highest quality.</p>
+    </div>
+
+    <div class="searcher gap-5">
+        <input type="text" placeholder="Paste YouTube Url Here..." id="display" class="p-5 border-solid border-cyan-400 border-2 rounded-xl w-2/5">
+        <button id="search" onclick="getVideo()" class="bg-cyan-400 p-5 rounded-xl font-bold text-white hover:bg-gray-400">Convert</button>
+    </div>
+    <br><br><br>
+    <p class="HDN text-3xl text-center">Convert Your Youtube videos to mp3</p>
+    <br><br>
+    <div id="output" class="flex flex-col justify-center items-center p-1">
+        <img src="images/Loader.gif" alt="" id="VDIMG">
+        <br>
+        <p id="TITLE"></p>  
+        <br>
+        <button id="download" class="bg-cyan-400 rounded-md p-2 text-white hover:bg-gray-400">Download Mp3 </button>
+    </div>
+
+    <br><br>
+    
+    <div class="flex flex-row justify-center items-center gap-5" id="Card-Container">
+
+
+        <div class="card">
+            <img src="images/No ads.png" alt="No ads" class="w-52">
+            <p>This website is free from ads and other interferences that may deliver a bad experience to users</p>
+        </div>
+        
+        <div class="card">
+            <img src="images/free.png" alt="No ads" class="w-52">
+            <p>This website is free of charge and any charges should be forwarded to the owner immediately</p>
+        </div>
+        
+        <div class="card">
+            <img src="images/safe.png" alt="No ads" class="w-52">
+            <p>This website is safe from viruses and other types of malware, all files are scanned before downloads</p>
+        </div>
+    </div>
+
+    <br>
+    
+    <br>
+
+    <div class="flex flex-col justify-center items-center bg-cyan-400 p-5">
+        <p class="text-xl">How To Use:</p>
+        <br>
+        <li>Paste YouTube video Url to the input field</li>
+        <li>Press Convert and wait for a few seconds</li>
+        <li>Download the Mp3 file by pressing the download button</li>
+    </div>
+    
+    
+
+    
+
+
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
