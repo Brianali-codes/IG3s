@@ -6,6 +6,7 @@
     <title>YTS3</title>
     <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="public/output.css">
+    <link rel="shortcut icon" href="public/images/download.png" type="image/x-icon">
 </head>
 <body>
 <div id="MAINER">
@@ -16,50 +17,80 @@
 
     <hr>
     <div class="flex flex-row justify-center items-center h-20 gap-6 p-5" id="BUTTONS">
-        <button id="DMP3">Download Mp3</button>
+        <button id="DMP3" onclick="toggleDownloader()">Download Mp3</button>
         <a href="https://gamerfunky78.github.io/" target="_blank"><button id="MGTB">My Github</button></a>
         <a href="#DL"><button id="HTDL">How To download</button></a>
+        <button id="DIGV" onclick="toggleDownloader()">Instagram Video</button>
     </div>
     <hr>
     <br><br>
-    <div class="flex flex-col justify-center items-center p-5">
-        <p class="HDN text-3xl font-bold">Convert Youtube videos to Mp3</p>
-        <br>
-        <p class="HDN">Easily convert your youtube videos to mp3 with highest quality.</p>
+
+    <div class="flex flex-col" id="YTM">
+        <div class="flex flex-col justify-center items-center p-5">
+            <p class="HDN text-3xl font-bold">Convert Youtube videos to Mp3</p>
+            <br>
+            <p class="HDN">Easily convert your youtube videos to mp3 with highest quality.</p>
+        </div>
+    
+        <div class="searcher gap-5">
+            <input type="text" placeholder="Paste YouTube Url Here..." id="display" class="p-5 border-solid border-cyan-400 border-2 rounded-xl w-2/5">
+            <button id="search" onclick="getVideo()" class="bg-cyan-400 p-5 rounded-xl font-bold text-white hover:bg-gray-400">Convert</button>
+        </div>
+        <br><br><br>
+        
+    </div>
+    
+
+    <div id="IGdownloader" class="flex flex-col">
+        <div class="flex flex-col justify-center items-center p-5">
+            <p class="HDN text-3xl font-bold">Convert Instagram videos to Mp4</p>
+            <br>
+            <p class="HDN">Easily convert your Instagram videos to mp4 with highest quality.</p>
+        </div>
+    
+        <div class="searcher gap-5">
+            <input type="text" placeholder="Paste Instagram Url Here..." id="display2" class="p-5 border-solid border-2 rounded-xl w-2/5">
+            <button id="search2" onclick="getIgVideo()" class="bg-pink-400 p-5 rounded-xl font-bold text-white hover:bg-gray-400">Convert</button>
+        </div>
+        <br><br><br>
+        
     </div>
 
-    <div class="searcher gap-5">
-        <input type="text" placeholder="Paste YouTube Url Here..." id="display" class="p-5 border-solid border-cyan-400 border-2 rounded-xl w-2/5">
-        <button id="search" onclick="getVideo()" class="bg-cyan-400 p-5 rounded-xl font-bold text-white hover:bg-gray-400">Convert</button>
-    </div>
-    <br><br><br>
-    <p class="HDN text-3xl text-center">Convert Your Youtube videos to mp3</p>
-    <br><br>
     <div id="output" class="flex flex-col justify-center items-center p-1">
         <img src="public/images/Loader.gif" alt="" id="VDIMG">
         <br>
-        <p id="TITLE"></p>  
+        <p id="TITLE"></p>   
         <br>
         <button id="download" class="bg-cyan-400 rounded-md p-2 text-white hover:bg-gray-400">Download Mp3 </button>
+        <button id="download2" class="bg-cyan-400 rounded-md p-2 text-white hover:bg-gray-400">Download Mp4</button>
     </div>
 
     <br><br>
+
+    <br><br><br>
+    <p class="HDN text-3xl text-center">Convert Your Youtube videos to mp3</p>
+    <br>
+    <p class="HDN text-center">Yt3s offers a user-friendly solution for converting YouTube content to MP3 format. With its free YouTube to MP3 converter, you can effortlessly download and save YouTube content to mp3 in high quality.
+
+        Simply paste the URL into the search box and press Download. our YouTube Video Downloader is completely secure and reliable.</p>
+    <br><br>
+    
     
     <div class="flex flex-row justify-center items-center gap-5" id="Card-Container">
 
 
         <div class="card">
-            <img src="public/images/No ads.png" alt="No ads" class="w-52">
+            <img src="public/images/No ads.webp" alt="No ads" class="w-52">
             <p>This website is free from ads and other interferences that may deliver a bad experience to users</p>
         </div>
         
         <div class="card">
-            <img src="public/images/free.png" alt="No ads" class="w-52">
+            <img src="public/images/free.webp" alt="No ads" class="w-52">
             <p>This website is free of charge and any charges should be forwarded to the owner immediately</p>
         </div>
         
         <div class="card">
-            <img src="public/images/safe.png" alt="No ads" class="w-52">
+            <img src="public/images/safe.webp" alt="No ads" class="w-52">
             <p>This website is safe from viruses and other types of malware, all files are scanned before downloads</p>
         </div>
     </div>
@@ -69,12 +100,17 @@
     <br>
 
     <div class="flex flex-col justify-center items-center bg-cyan-400 p-5" id="DL">
-        <p class="text-xl">How To Use:</p>
+        <p class="text-3xl">How To Use:</p>
         <br>
-        <li>Paste YouTube video Url to the input field</li>
-        <li>Press Convert and wait for a few seconds</li>
-        <li>Download the Mp3 file by pressing the download button</li>
+        <li class="text-2xl">Paste YouTube video Url to the input field</li>
+        <li class="text-2xl">Press Convert and wait for a few seconds</li>
+        <li class="text-2xl">Download the Mp3 file by pressing the download button</li>
     </div>
+
+    
+
+
+
 </div>
 </body>
 <script src="public/index.js"></script>

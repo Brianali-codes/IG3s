@@ -23,6 +23,15 @@ html{
     box-shadow: 1px 1px 3px 2px rgb(233, 233, 233);
     transition: 0.5s;
 }
+#search2{
+    background: linear-gradient(to right,cyan,pink);
+}
+#display2{
+    border-color: rgb(255, 138, 158);
+}
+#IGdownloader{
+    display: none;
+}
 .card:hover{
     box-shadow: 1px 1px 3px 2px rgb(170, 170, 170);
     cursor: pointer;
@@ -49,6 +58,12 @@ html{
     }
     #display{
         width: 70%;
+    }
+    #display2{
+        width: 70%;
+    }
+    #BUTTONS button{
+       font-size: 12px;
     }
 }
 
