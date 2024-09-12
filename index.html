@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="public/output.css">
 </head>
 <body>
+<div id="MAINER">
     <div id="NAVBAR" class="flex justify-center items-center h-11 gap-1">
         <img src="public/images/download.png" alt="Logo" class="w-8">
         <p class="font-bold">YT3s</p>
     </div>
 
     <hr>
-    <div class="flex flex-row justify-center items-center h-20 gap-5 p-5">
-        <button>Download Mp3</button>
-        <button>My Github</button>
+    <div class="flex flex-row justify-center items-center h-20 gap-6 p-5" id="BUTTONS">
+        <button id="DMP3">Download Mp3</button>
+        <a href="https://gamerfunky78.github.io/" target="_blank"><button id="MGTB">My Github</button></a>
+        <a href="#DL"><button id="HTDL">How To download</button></a>
     </div>
     <hr>
     <br><br>
@@ -66,14 +68,14 @@
     
     <br>
 
-    <div class="flex flex-col justify-center items-center bg-cyan-400 p-5">
+    <div class="flex flex-col justify-center items-center bg-cyan-400 p-5" id="DL">
         <p class="text-xl">How To Use:</p>
         <br>
         <li>Paste YouTube video Url to the input field</li>
         <li>Press Convert and wait for a few seconds</li>
         <li>Download the Mp3 file by pressing the download button</li>
     </div>
-
+</div>
 </body>
 <script src="public/index.js"></script>
 </html>
