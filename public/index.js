@@ -4,7 +4,7 @@ async function getVideo() {
 
     let input = document.getElementById('display').value
     let loader = document.getElementById("output")
-    let Button = document.getElementById("download2")
+    let Button = document.getElementById("download")
     let Button2 = document.getElementById("download2")
 
     loader.style.display = "flex"
