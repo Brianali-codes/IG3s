@@ -29,9 +29,6 @@ html{
 #display2{
     border-color: rgb(255, 138, 158);
 }
-#IGdownloader{
-    display: none;
-}
 .card:hover{
     box-shadow: 1px 1px 3px 2px rgb(170, 170, 170);
     cursor: pointer;
